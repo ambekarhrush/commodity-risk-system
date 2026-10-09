@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Commodity Risk / Brief</title>
+<style>
+:root{color-scheme:light;font-family:Arial,sans-serif;color:#152a34;background:#e9efef}
+*{box-sizing:border-box}body{max-width:1120px;margin:32px auto;padding:40px;background:#fff}
+header{border-top:5px solid #18796e;padding-top:20px}.eyebrow{letter-spacing:2px;font-size:11px;font-weight:700;color:#16675e}
+h1{font-size:44px;letter-spacing:-2px;margin:12px 0}.sub,footer{color:#4f626b;font-size:13px;line-height:1.6}
+.badge{display:inline-block;background:#f6e9c9;color:#63460a;padding:8px 12px;font-size:11px;font-weight:bold}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
+.card{padding:18px;background:#edf5f3;border-top:2px solid #18796e}.card span{font-size:11px}.card strong{display:block;font-size:28px;margin-top:9px}
+h2{font-size:16px;margin:22px 0 12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+table{width:100%;border-collapse:collapse;font-size:12px}th{text-align:left;color:#4f626b;font-size:10px}td,th{padding:10px 5px;border-bottom:1px solid #dce5e5}td:not(:first-child),th:not(:first-child){text-align:right}
+.note{background:#f4f6f7;padding:14px;font-size:12px;line-height:1.6}footer{border-top:1px solid #cedada;margin-top:24px;padding-top:12px;font-size:11px}
+@media(max-width:700px){body{margin:0;padding:20px}h1{font-size:34px}.cards{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}}
+@media print{@page{size:A4 landscape;margin:12mm}body{margin:0;padding:0;max-width:none}h1{font-size:32px}.cards{margin:16px 0}td,th{padding:7px 4px}footer{margin-top:12px}}
+</style><header><div class="eyebrow">COMMODITY RESEARCH / 02 — RISK SYSTEM</div>
+<h1>The book, under stress.</h1><span class="badge">SYNTHETIC DEMONSTRATION</span>
+<p class="sub">As of 2026-05-20 · USD · 97.5% confidence · 100 observed intervals · Fixed holdings</p></header>
+<div class="cards"><div class="card"><span>Daily variation P&L</span><strong>−$1,719</strong></div><div class="card"><span>Historical VaR</span><strong>$12,313</strong></div><div class="card"><span>Historical ES</span><strong>$31,858</strong></div><div class="card"><span>Filtered ES</span><strong>$15,062</strong></div></div>
+<div class="grid"><section><h2>01 / Position reconciliation</h2><table><thead><tr><th>Position / synthetic in demo</th><th>Contracts</th><th>Daily P&amp;L</th></tr></thead><tbody><tr><td>DEMO:ENERGY_NEAR</td><td>+12</td><td>−$5,850</td></tr><tr><td>DEMO:ENERGY_FAR</td><td>-8</td><td>$4,131</td></tr></tbody></table>
+<p class="sub">Gross reference notional $941,479. This is not futures market value.</p>
+<h2>02 / Scenario losses</h2><table><thead><tr><th>Scenario • absolute price shocks</th><th>P&amp;L</th></tr></thead><tbody><tr><td>Parallel decline / hypothetical</td><td>−$40,000</td></tr><tr><td>Curve inversion / hypothetical</td><td>−$112,000</td></tr><tr><td>Negative price / hypothetical</td><td>−$720,000</td></tr></tbody></table></section>
+<section><h2>03 / Illustrative risk limits</h2><table><thead><tr><th>Limit</th><th>Observed</th><th>Threshold</th><th>Result</th></tr></thead><tbody><tr><td>Hs Es</td><td>$31,858</td><td>$15,000</td><td>BREACH</td></tr><tr><td>Gross Notional</td><td>$941,479</td><td>$1,500,000</td><td>Within</td></tr><tr><td>Stress Loss</td><td>$720,000</td><td>$75,000</td><td>BREACH</td></tr></tbody></table><h2>04 / Rolling forecast audit</h2>
+<div class="note">259 out-of-sample forecasts · 12 historical VaR exceptions · 13 filtered VaR exceptions.<br>
+Nominal expected exceptions: 6.48. Descriptive counts, not a model-validation pass. Every estimate uses only preceding observations.</div></section></div>
+<footer>Research prototype. Demo prices, positions, shocks and limits are synthetic. No fees, FX, margin, liquidity, options or rolls. Snapshot imports are retrospective, not point-in-time historical vintages. Horizons are adjacent supplied observations; venue sessions are not verified. Positive risk values denote losses. Full precision and provenance: report.json; forecast audit: backtest.csv.</footer></html>

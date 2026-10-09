@@ -1,0 +1,82 @@
+{
+  "as_of": "2026-05-20",
+  "confidence": 0.975,
+  "window": 100,
+  "observations": 360,
+  "currency": "USD",
+  "hs": {
+    "var": 12313.128031701977,
+    "es": 31857.57760272265
+  },
+  "fhs": {
+    "var": 11766.246881956473,
+    "es": 15062.325330319234
+  },
+  "daily_pnl": -1719.111879049593,
+  "contributions": {
+    "DEMO:ENERGY_NEAR": -5850.053488180209,
+    "DEMO:ENERGY_FAR": 4130.941609130616
+  },
+  "gross_notional": 941478.9661872394,
+  "stresses": {
+    "Parallel decline / hypothetical": -40000.0,
+    "Curve inversion / hypothetical": -112000.0,
+    "Negative price / hypothetical": -720000.0
+  },
+  "worst_observed_shock": {
+    "date": "2026-01-15",
+    "pnl": -60000.0
+  },
+  "backtest": {
+    "observations": 259,
+    "hs_exceptions": 12,
+    "fhs_exceptions": 13,
+    "expected_exceptions": 6.475000000000006
+  },
+  "limits": [
+    {
+      "measure": "hs_es",
+      "value": 31857.57760272265,
+      "limit": 15000.0,
+      "breach": true
+    },
+    {
+      "measure": "gross_notional",
+      "value": 941478.9661872394,
+      "limit": 1500000.0,
+      "breach": false
+    },
+    {
+      "measure": "stress_loss",
+      "value": 720000.0,
+      "limit": 75000.0,
+      "breach": true
+    }
+  ],
+  "provenance": {
+    "mode": "SYNTHETIC DEMONSTRATION",
+    "seed": 20261009,
+    "price_kinds": [
+      "synthetic"
+    ],
+    "calendar": "weekdays; not an exchange calendar"
+  },
+  "input_hashes": {
+    "quotes": "371daf5b2ca89cdaac847af9dbdab10b415587bfa5ccb4e170e3a376de4935e1",
+    "book": "06ce36d895082bc0d6097a1917f5ba07549d3ceb5a9f8f1f447e6638d0c1c15d"
+  },
+  "scenarios": {
+    "Parallel decline / hypothetical": {
+      "DEMO:ENERGY_NEAR": -10.0,
+      "DEMO:ENERGY_FAR": -10.0
+    },
+    "Curve inversion / hypothetical": {
+      "DEMO:ENERGY_NEAR": -8.0,
+      "DEMO:ENERGY_FAR": 2.0
+    },
+    "Negative price / hypothetical": {
+      "DEMO:ENERGY_NEAR": -100.0,
+      "DEMO:ENERGY_FAR": -60.0
+    }
+  }
+}
