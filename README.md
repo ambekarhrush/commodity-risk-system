@@ -13,7 +13,8 @@ This is **Project 2** in the commodity research portfolio.
 
 ## Run the demonstration
 
-Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).
+Requires [uv](https://docs.astral.sh/uv/). The reproducible environment pins Python 3.11;
+uv installs it when needed.
 
 ```sh
 uv sync --locked --extra dev
