@@ -1,5 +1,7 @@
 # Commodity Risk System
 
+[Project one-pager (PDF)](docs/project-brief.pdf) · [Editable brief](docs/project-brief.md)
+
 ### Know what the book loses—and why.
 
 A reproducible research system for a small futures and calendar-spread book.
